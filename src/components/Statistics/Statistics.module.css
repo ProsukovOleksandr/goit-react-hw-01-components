@@ -1,0 +1,21 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.statList {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
