@@ -1,11 +1,12 @@
 .statistics {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   font-size: 30px;
   font-weight: 400;
-  margin: 0 auto;
   margin-top: 30px;
 }
 .statList {
