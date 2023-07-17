@@ -1,14 +1,15 @@
 import { FriendListItem } from 'components/FriendList/FriendListItem.jsx';
-import css from 'components/FriendList/FriendList.module.css';
+import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   function createList(friends) {
-    let list = friends.map(friendData => (
+    let list = friends.map(({avatar,name,isOnline,id}) => (
       <FriendListItem
-        avatar={friendData.avatar}
-        name={friendData.name}
-        isOnline={friendData.isOnline}
+        avatar={avatar}
+        name={name}
+        isOnline={isOnline}
+        key = {id}
       />
     ));
     return list;
